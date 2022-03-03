@@ -8,20 +8,61 @@
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              default_background: '#000000',
+              default_text: '#FFFFFF',
+              main: '#E22020'
+            }
+          },
+          screens: {
+            sm: '600px',
+            md: '900px',
+            lg: '1200px'
+          }
+        }
+      };
+    </script>
   </head>
-  <body>
+  <body class="bg-default_background text-default_text">
     <script src="script.js"></script>
+
     <!-- header section -->
-    <header class="w-full h-[100px] bg-red-600 flex justify-center">
-      <nav class="inner w-full tb_g">
-        <a href="#home" class="">Home</a>
-        <a href="#about" class="">About</a>
-      </nav>
+    <header class="w-full flex justify-center py-[30px]">
+      <div class="inner w-full flex justify-between items-center">
+        <p class="transition-all hover:scale-105 text-2xl font-bold">
+          <a href="#">YourCode <span class="text-main">Dan</span></a>
+        </p>
+
+        <div
+          id="menu"
+          class="z-10 flex lg:flex-row flex-col lg:relative fixed lg:h-auto h-screen w-full lg:w-auto lg:left-auto left-[-100%] lg:top-auto top-0 items-center bg-default_background transition-all lg:py-0 py-[80px]"
+        >
+          <p
+            class="lg:ml-[25px] lg:mb-0 mb-[20px] transition-all hover:scale-105 hover:text-main lg:text-lg text-2xl lg:font-medium font-semibold"
+          >
+            <a class="menu_btn" href="#home">Home</a>
+          </p>
+          <p
+            class="lg:ml-[25px] lg:mb-0 mb-[20px] transition-all hover:scale-105 hover:text-main lg:text-lg text-2xl lg:font-medium font-semibold"
+          >
+            <a class="menu_btn" href="#about">About</a>
+          </p>
+        </div>
+        <div
+          class="menu_btn lg:hidden text-2xl cursor-pointer z-20 transition-all hover:text-main"
+        >
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
     </header>
 
     <!-- home section start -->
