@@ -2,9 +2,13 @@ $(document).ready(function () {
   $(window).scroll(function () {
     // sticky navbar on scroll script
     if (this.scrollY > 20) {
-      $('.navbar').addClass('sticky');
+      $('#header').addClass('bg-main py-[15px]');
+      $('#header_name').addClass('text-white');
+      $('.menu_btn').removeClass('hover:text-main');
     } else {
-      $('.navbar').removeClass('sticky');
+      $('#header').removeClass('bg-main py-[15px]');
+      $('#header_name').removeClass('text-white');
+      $('.menu_btn').addClass('hover:text-main');
     }
 
     // scroll-up button show/hide script
@@ -18,33 +22,24 @@ $(document).ready(function () {
   // slide-up script
   $('.scroll-up-btn').click(function () {
     $('html').animate({ scrollTop: 0 });
-    // removing smooth scroll on slide-up button click
-    // $('html').css("scrollBehavior", "auto");
   });
-
-  //   $('.navbar .menu li a').click(function () {
-  //     // applying again smooth scroll on menu items click
-  //     $('html').css('scrollBehavior', 'smooth');
-  //   });
 
   // toggle menu/navbar script
   $('.menu_btn').click(function () {
-    // console.log(111);
-    // $('.navbar .menu').toggleClass('active');
-    $('#menu').toggleClass('active');
+    $('#menu').toggleClass('left-0');
     $('.menu_btn i').toggleClass('active');
   });
 
   // typing text animation script
   var typed = new Typed('.typing', {
-    strings: ['YouTuber', 'Developer', 'Blogger', 'Designer', 'Freelancer'],
+    strings: ['웹 개발자', '서버 개발자', '블로거', '유투버', '프리랜서'],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
   });
 
   var typed = new Typed('.typing-2', {
-    strings: ['YouTuber', 'Developer', 'Blogger', 'Designer', 'Freelancer'],
+    strings: ['웹 개발자', '서버 개발자', '블로거', '유투버', '프리랜서'],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
