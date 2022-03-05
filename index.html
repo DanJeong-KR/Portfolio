@@ -39,32 +39,32 @@
 
 </head>
 
-<body class="bg-first_background text-first_text flex flex-col items-center">
+<body class="bg-first_background text-first_text flex flex-col items-center transition-all">
     <script src="script.js"></script>
 
     <!-- header section -->
-    <header id="header" class="fixed w-full flex justify-center py-[30px] z-[9999] transition-all ease-in duration-300">
+    <header id="header" class="fixed w-full flex justify-center py-[30px] z-[9999] ease-in duration-300">
         <div class="inner w-full flex justify-between items-center">
-            <p class="transition-all hover:scale-105 text-2xl font-bold">
+            <p class="hover:scale-105 text-2xl font-bold">
                 <a href="#">YourCode <span id="header_name" class="text-main">Dan</span></a>
             </p>
 
             <div id="menu"
-                class="z-[1] flex md:flex-row flex-col md:relative fixed md:h-auto h-screen w-full md:w-auto md:left-auto left-[-100%] md:top-auto top-0 items-center transition-all md:py-0 py-[80px] bg">
+                class="z-[1] flex md:flex-row flex-col md:relative fixed md:h-auto h-screen w-full md:w-auto md:left-auto left-[-100%] md:top-auto top-0 items-center md:py-0 py-[80px] bg">
                 <p
-                    class="menu_btn md:ml-[25px] md:mb-0 mb-[20px] transition-all hover:scale-105 hover:text-main md:text-lg text-2xl md:font-medium font-semibold">
+                    class="menu_btn md:ml-[25px] md:mb-0 mb-[20px] hover:scale-105 hover:text-main md:text-lg text-2xl md:font-medium font-semibold">
                     <a href="#home">Home</a>
                 </p>
                 <p
-                    class="menu_btn md:ml-[25px] md:mb-0 mb-[20px] transition-all hover:scale-105 hover:text-main md:text-lg text-2xl md:font-medium font-semibold">
+                    class="menu_btn md:ml-[25px] md:mb-0 mb-[20px] hover:scale-105 hover:text-main md:text-lg text-2xl md:font-medium font-semibold">
                     <a href="#about">About</a>
                 </p>
                 <p
-                    class="menu_btn md:ml-[25px] md:mb-0 mb-[20px] transition-all hover:scale-105 hover:text-main md:text-lg text-2xl md:font-medium font-semibold">
+                    class="menu_btn md:ml-[25px] md:mb-0 mb-[20px] hover:scale-105 hover:text-main md:text-lg text-2xl md:font-medium font-semibold">
                     <a href="#skills">Skills</a>
                 </p>
             </div>
-            <div class="menu_btn md:hidden text-2xl cursor-pointer z-[2] transition-all hover:text-main">
+            <div class="menu_btn md:hidden text-2xl cursor-pointer z-[2] hover:text-main">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
@@ -76,12 +76,14 @@
         <div class="inner h-full flex flex-col justify-center z-[2] relative">
 
             <div class="flex flex-col">
-                <p class="text-[27px]">안녕하세요, 저는</p>
-                <div class="lg:text-[75px] md:text-[65px] text-[55px] font-semibold">정창식 입니다.</div>
+                <p class="text-[27px] hover:scale-105">안녕하세요, 저는</p>
+                <div class="lg:text-[75px] md:text-[65px] text-[55px] font-semibold hover:scale-105"><span
+                        class="text-main">정창식</span>
+                    입니다.</div>
                 <div class="my-[5px] lg:text-[40px] md:text-[32px] text-[26px]">
                     그리고 저는 <span class="typing text-main"></span> 입니다.
                 </div>
-                <a class="border-2 border-main px-[36px] py-[12px] bg-main rounded-md transition-all ease-in cursor-pointer hover:bg-first_background mt-[20px] w-fit"
+                <a class="border-2 border-main px-[36px] py-[12px] bg-main rounded-md ease-in cursor-pointer hover:bg-first_background hover:scale-105 mt-[20px] w-fit"
                     href="mailto:a920506@gmail.com?Subject=Hello">Hire Me</a>
             </div>
         </div>
@@ -94,21 +96,20 @@
         <div class="inner h-full flex flex-col items-center">
             <h2 class="text-[40px] font-semibold mb-[60px]">About me</h2>
             <div class="flex md:flex-row flex-col items-center justify-between">
-                <img class="md:min-w-[400px] min-w-[350px] md:h-[400px] h-[350px] rounded-md object-cover md:mr-[30px]"
+                <img class="md:min-w-[400px] min-w-[350px] md:h-[400px] h-[350px] rounded-md object-cover md:mr-[30px] hover:scale-105"
                     src="images/about.jpg" alt="" />
-                <div class="mt-[60px] flex flex-col">
+                <div class="mt-[60px] flex flex-col hover:scale-105">
                     <div class="text-[25px] font-medium mb-[10px]">
                         저는 <span class="typing-2 text-main"></span> 정창식 입니다.
                     </div>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut
-                        voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam
-                        voluptatem nisi delectus. Facere explicabo hic minus accusamus alias
-                        fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam
-                        possimus veritatis, placeat, ab molestiae velit inventore
-                        exercitationem consequuntur blanditiis omnis beatae. Dolor iste
-                        excepturi ratione soluta quas culpa voluptatum repudiandae harum
-                        non.
+                        유어코드를 창립하여 개발 역량이 부족한 스타트업에게 기획부터 UI/UX 디자인, 웹, 앱, 서버 개발까지 하나의 서비스를 개발하기 위한 모든 프로세스를 제공하는 일을
+                        했습니다. 5년 차 풀스택 개발자로써 주로 웹 서비스 개발을 담당했으며 필요에 따라 PO(Product Owner) 역할을 겸하였습니다. <br /><br />큰 임팩트는
+                        혼자가 아닌
+                        함께 만들
+                        수 있다고 생각하기에 다양한 직무의 팀
+                        구성원들과 적극적으로 커뮤니케이션하며 협업해왔습니다. 반복되는 일을 자동화하고 비효율적인 프로세스를 개선하는 일을 좋아합니다. 팀 구성원들의 단순/루틴 업무 시간을 줄여주기
+                        위해 지속해서 백오피스를 개선하고 개발한 경험이 있습니다.
                     </p>
                 </div>
             </div>
@@ -121,19 +122,19 @@
         <div class="flex md:flex-row flex-col justify-between w-full">
             <div class="carousel owl-carousel">
                 <div
-                    class="flex flex-col items-center bg-second_point hover:bg-main rounded-md px-[35px] py-[25px] pointer transition-all ease-in cursor-pointer">
+                    class="flex flex-col items-center bg-second_point hover:bg-main rounded-md px-[35px] py-[25px] pointer ease-in cursor-pointer">
                     <i class="fa-brands fa-internet-explorer text-[50px]"></i>
                     <div class="text-[25px] my-[10px]">Web Development</div>
                     <p>React 를 기반으로 웹 서비스 개발 경험이 많습니다.</p>
                 </div>
                 <div
-                    class="flex flex-col items-center bg-second_point hover:bg-main rounded-md px-[35px] py-[25px] pointer transition-all ease-in cursor-pointer">
+                    class="flex flex-col items-center bg-second_point hover:bg-main rounded-md px-[35px] py-[25px] pointer ease-in cursor-pointer">
                     <i class="fas fa-server text-[50px] "></i>
                     <div class="text-[25px] my-[10px]">API Server Development</div>
                     <p>Node.js 를 기반으로 상용 서비스의 API를 설계하고 구현한 경험이 있습니다.</p>
                 </div>
                 <div
-                    class="flex flex-col items-center bg-second_point hover:bg-main rounded-md px-[35px] py-[25px] pointer transition-all ease-in cursor-pointer">
+                    class="flex flex-col items-center bg-second_point hover:bg-main rounded-md px-[35px] py-[25px] pointer ease-in cursor-pointer">
                     <i class="fa-brands fa-js text-[50px] "></i>
 
 
@@ -142,7 +143,7 @@
                     <p>React 기반으로 상용 서비스를 개발 하고 있기 때문에 Javascript를 익숙하게 사용합니다.</p>
                 </div>
                 <div
-                    class="flex flex-col items-center bg-second_point hover:bg-main rounded-md px-[35px] py-[25px] pointer transition-all ease-in cursor-pointer">
+                    class="flex flex-col items-center bg-second_point hover:bg-main rounded-md px-[35px] py-[25px] pointer ease-in cursor-pointer">
                     <i class="fas fa-language text-[50px] "></i>
                     <div class="text-[25px] my-[10px]">English Language</div>
                     <p>영어로 의사소통에 문제가 없을 정도로 구사하며, 비지니스 환경에서 영어로 업무를 처리할 수 있습니다.</p>

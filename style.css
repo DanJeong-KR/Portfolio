@@ -10,6 +10,15 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
+section,
+p,
+div,
+a,
+header,
+img {
+  transition: all 0.2s;
+}
+
 .inner {
   width: 100%;
   padding: 0 20px;
