@@ -51,7 +51,8 @@ body {
   margin: 0 5px;
   outline: none !important;
   border-radius: 50%;
-  border: 2px solid crimson !important;
+  /* border: 2px solid #e22020 !important; */
+  border: 2px solid #9933ff !important;
   transition: all 0.3s ease;
 }
 .owl-dot.active {
@@ -60,5 +61,6 @@ body {
 }
 .owl-dot.active,
 .owl-dot:hover {
-  background: crimson !important;
+  /* background: #e22020 !important; */
+  background: #9933ff !important;
 }

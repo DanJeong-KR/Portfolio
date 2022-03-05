@@ -16,9 +16,12 @@
             theme: {
                 extend: {
                     colors: {
-                        default_background: '#000000',
-                        default_text: '#FFFFFF',
-                        main: '#E22020'
+                        first_background: '#000000',
+                        second_background: "#FFFFFF",
+                        second_point: "#222",
+                        first_text: '#FFFFFF',
+                        second_text: "#000000",
+                        main: '#9933FF'
                     }
                 },
                 screens: {
@@ -36,7 +39,7 @@
 
 </head>
 
-<body class="bg-default_background text-default_text flex flex-col items-center">
+<body class="bg-first_background text-first_text flex flex-col items-center">
     <script src="script.js"></script>
 
     <!-- header section -->
@@ -47,7 +50,7 @@
             </p>
 
             <div id="menu"
-                class="z-[1] flex md:flex-row flex-col md:relative fixed md:h-auto h-screen w-full md:w-auto md:left-auto left-[-100%] md:top-auto top-0 items-center transition-all md:py-0 py-[80px]">
+                class="z-[1] flex md:flex-row flex-col md:relative fixed md:h-auto h-screen w-full md:w-auto md:left-auto left-[-100%] md:top-auto top-0 items-center transition-all md:py-0 py-[80px] bg">
                 <p
                     class="menu_btn md:ml-[25px] md:mb-0 mb-[20px] transition-all hover:scale-105 hover:text-main md:text-lg text-2xl md:font-medium font-semibold">
                     <a href="#home">Home</a>
@@ -78,20 +81,21 @@
                 <div class="my-[5px] lg:text-[40px] md:text-[32px] text-[26px]">
                     그리고 저는 <span class="typing text-main"></span> 입니다.
                 </div>
-                <a class="border-2 border-main px-[36px] py-[12px] bg-main rounded-md transition-all ease-in cursor-pointer hover:bg-black mt-[20px] w-fit"
+                <a class="border-2 border-main px-[36px] py-[12px] bg-main rounded-md transition-all ease-in cursor-pointer hover:bg-first_background mt-[20px] w-fit"
                     href="mailto:a920506@gmail.com?Subject=Hello">Hire Me</a>
             </div>
         </div>
-        <img class="absolute w-full h-full object-cover z-[1] left-0 top-0" src="images/banner.jpg" alt="" />
+        <!-- <img class="absolute w-full h-full object-cover z-[1] left-0 top-0" src="images/banner.jpg" alt="" /> -->
     </section>
 
     <!-- about section start -->
-    <section class="w-full min-h-[500px] py-[100px] bg-white text-black flex flex-col items-center" id="about">
+    <section class="w-full min-h-[500px] py-[100px] bg-second_background text-second_text flex flex-col items-center"
+        id="about">
         <div class="inner h-full flex flex-col items-center">
             <h2 class="text-[40px] font-semibold mb-[60px]">About me</h2>
             <div class="flex md:flex-row flex-col items-center justify-between">
                 <img class="md:min-w-[400px] min-w-[350px] md:h-[400px] h-[350px] rounded-md object-cover md:mr-[30px]"
-                    src="images/profile-1.jpeg" alt="" />
+                    src="images/about.jpg" alt="" />
                 <div class="mt-[60px] flex flex-col">
                     <div class="text-[25px] font-medium mb-[10px]">
                         저는 <span class="typing-2 text-main"></span> 정창식 입니다.
@@ -117,19 +121,19 @@
         <div class="flex md:flex-row flex-col justify-between w-full">
             <div class="carousel owl-carousel">
                 <div
-                    class="flex flex-col items-center bg-[#222] hover:bg-main rounded-md px-[35px] py-[25px] pointer transition-all ease-in cursor-pointer">
+                    class="flex flex-col items-center bg-second_point hover:bg-main rounded-md px-[35px] py-[25px] pointer transition-all ease-in cursor-pointer">
                     <i class="fa-brands fa-internet-explorer text-[50px]"></i>
                     <div class="text-[25px] my-[10px]">Web Development</div>
                     <p>React 를 기반으로 웹 서비스 개발 경험이 많습니다.</p>
                 </div>
                 <div
-                    class="flex flex-col items-center bg-[#222] hover:bg-main rounded-md px-[35px] py-[25px] pointer transition-all ease-in cursor-pointer">
+                    class="flex flex-col items-center bg-second_point hover:bg-main rounded-md px-[35px] py-[25px] pointer transition-all ease-in cursor-pointer">
                     <i class="fas fa-server text-[50px] "></i>
                     <div class="text-[25px] my-[10px]">API Server Development</div>
                     <p>Node.js 를 기반으로 상용 서비스의 API를 설계하고 구현한 경험이 있습니다.</p>
                 </div>
                 <div
-                    class="flex flex-col items-center bg-[#222] hover:bg-main rounded-md px-[35px] py-[25px] pointer transition-all ease-in cursor-pointer">
+                    class="flex flex-col items-center bg-second_point hover:bg-main rounded-md px-[35px] py-[25px] pointer transition-all ease-in cursor-pointer">
                     <i class="fa-brands fa-js text-[50px] "></i>
 
 
@@ -138,7 +142,7 @@
                     <p>React 기반으로 상용 서비스를 개발 하고 있기 때문에 Javascript를 익숙하게 사용합니다.</p>
                 </div>
                 <div
-                    class="flex flex-col items-center bg-[#222] hover:bg-main rounded-md px-[35px] py-[25px] pointer transition-all ease-in cursor-pointer">
+                    class="flex flex-col items-center bg-second_point hover:bg-main rounded-md px-[35px] py-[25px] pointer transition-all ease-in cursor-pointer">
                     <i class="fas fa-language text-[50px] "></i>
                     <div class="text-[25px] my-[10px]">English Language</div>
                     <p>영어로 의사소통에 문제가 없을 정도로 구사하며, 비지니스 환경에서 영어로 업무를 처리할 수 있습니다.</p>

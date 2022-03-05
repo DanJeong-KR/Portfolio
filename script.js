@@ -2,51 +2,51 @@ $(document).ready(function () {
   $(window).scroll(function () {
     // sticky navbar on scroll script
     if (this.scrollY > 20) {
-      $('#header').addClass('bg-main py-[15px]');
-      $('#header_name').addClass('text-white');
-      $('.menu_btn').removeClass('hover:text-main');
+      $("#header").addClass("bg-main py-[15px]");
+      $("#header_name").addClass("text-first_text");
+      $(".menu_btn").removeClass("hover:text-main");
     } else {
-      $('#header').removeClass('bg-main py-[15px]');
-      $('#header_name').removeClass('text-white');
-      $('.menu_btn').addClass('hover:text-main');
+      $("#header").removeClass("bg-main py-[15px]");
+      $("#header_name").removeClass("text-first_text");
+      $(".menu_btn").addClass("hover:text-main");
     }
 
     // scroll-up button show/hide script
     if (this.scrollY > 500) {
-      $('.scroll-up-btn').addClass('show');
+      $(".scroll-up-btn").addClass("show");
     } else {
-      $('.scroll-up-btn').removeClass('show');
+      $(".scroll-up-btn").removeClass("show");
     }
   });
 
   // slide-up script
-  $('.scroll-up-btn').click(function () {
-    $('html').animate({ scrollTop: 0 });
+  $(".scroll-up-btn").click(function () {
+    $("html").animate({ scrollTop: 0 });
   });
 
   // toggle menu/navbar script
-  $('.menu_btn').click(function () {
-    $('#menu').toggleClass('left-0');
-    $('.menu_btn i').toggleClass('active');
+  $(".menu_btn").click(function () {
+    $("#menu").toggleClass("left-0 md:bg-inherit bg-first_background");
+    $(".menu_btn i").toggleClass("active");
   });
 
   // typing text animation script
-  var typed = new Typed('.typing', {
-    strings: ['웹 개발자', '서버 개발자', '블로거', '유투버', '프리랜서'],
+  var typed = new Typed(".typing", {
+    strings: ["웹 개발자", "서버 개발자", "블로거", "유투버", "프리랜서"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
   });
 
-  var typed = new Typed('.typing-2', {
-    strings: ['웹 개발자', '서버 개발자', '블로거', '유투버', '프리랜서'],
+  var typed = new Typed(".typing-2", {
+    strings: ["웹 개발자", "서버 개발자", "블로거", "유투버", "프리랜서"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true
   });
 
   // owl carousel script
-  $('.carousel').owlCarousel({
+  $(".carousel").owlCarousel({
     margin: 20,
     loop: true,
     autoplay: true,
@@ -67,4 +67,6 @@ $(document).ready(function () {
       }
     }
   });
+
+  $(".owl-dot").addClass("border-2 border-main");
 });
