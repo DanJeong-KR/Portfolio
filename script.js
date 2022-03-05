@@ -3,11 +3,11 @@ $(document).ready(function () {
     // sticky navbar on scroll script
     if (this.scrollY > 20) {
       $("#header").addClass("bg-main py-[15px]");
-      $("#header_name").addClass("text-first_text");
+      $("#header_name").removeClass("text-main");
       $(".menu_btn").removeClass("hover:text-main");
     } else {
       $("#header").removeClass("bg-main py-[15px]");
-      $("#header_name").removeClass("text-first_text");
+      $("#header_name").addClass("text-main");
       $(".menu_btn").addClass("hover:text-main");
     }
 
